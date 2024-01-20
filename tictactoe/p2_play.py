@@ -51,5 +51,6 @@ while not board.is_ended(state):
     last_action = current_player(board, state)
     state = board.next_state(state, last_action)
     current_player = player1 if current_player == player2 else player2
+print(board.display(state, last_action))
 print("Finished!")
 print(board.points_values(state))
